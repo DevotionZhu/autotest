@@ -20,5 +20,8 @@ from apitest import views  # 加入引用
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', views.test),  # 加入关联路径及函数
-    path('login/', views.login)
+    path('login/', views.login),
+    path('home/', views.home),
+    path('logout/', views.logout)
+
 ]
