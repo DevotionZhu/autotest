@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from apitest import views  # 加入引用
 from product import proviews
+from set import setviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,7 @@ urlpatterns = [
     path('login/', views.login),
     path('home/', views.home),
     path('logout/', views.logout),
-    path('product_manage/', proviews.product_manage)
+    path('product_manage/', proviews.product_manage),
+    path('set_manage/',setviews.set_manage)
 
 ]
