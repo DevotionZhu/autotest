@@ -6,7 +6,6 @@ from django.contrib.auth.decorators import login_required
 
 
 # 产品管理
-@login_required
 def product_manage(request):
     username = request.session.get('user', '')
     product_list = Product.objects.all()
